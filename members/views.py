@@ -21,16 +21,12 @@ def info_view(request):
     
     headers = {k: v for k, v in request.META.items() if k.startswith('HTTP_')}
     
-    accept_header = request.headers.get('Accept', 'N/A')
-    user_agent_header = request.headers.get('User-Agent', 'N/A')
+    headers = dict(request.headers)
     
     response_data = {
         "time": current_time,
         "client_address": client_address,
         "host_name": host_name,
-          "headers": {
-            "Accept": accept_header,
-            "User-Agent": user_agent_header
-        }
+          "headers": headers  
     }
     return JsonResponse(response_data)
