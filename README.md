@@ -35,6 +35,11 @@ Example response:
 }
 ![image](https://github.com/user-attachments/assets/cec8e531-bc9a-4e30-8bc2-f4faa6406701)
 
+
+## Test code:
+![image](https://github.com/user-attachments/assets/d44d7d16-9645-40e5-8eb4-3a64346fca59)
+
+
 ## Project Setup
 
 ### Python Version
@@ -74,6 +79,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 The app will be available at http://127.0.0.1:8000/.
+
+
+
 
 
 
